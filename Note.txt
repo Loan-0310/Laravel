@@ -1,0 +1,46 @@
+run: php artisan serve 
+download: composer + git 
+
+include => @include('ten-file', ['data'=>'value'])
+components => components => <x-aside /> (trong đó aside là tên file nằm trong thư mục components, bắt buộc tên thư mucj phải là components)
+
+@extends('layout.admin')
+
+lỗi link {{ route('tên_route') }} => kiểm tra trong route xem đã có tên hay chưa 
+
+thêm <base href="/"> trên phần head để liên kết css vs js 
+
+route => controller => action(hàm), view, model
+
+tìm tên Models => Vendor => Laravel => Framework => Database => Eloquent => Model.php
+
+sửa tên database => .env => DB_DATABASE= tên_database
+
+php artisan make:controller ten_controller => thêm mới controller 
+
+C => route, view (form thêm mới), POST
+R => route, view (danh sách) 
+U => route, view (form edit), POST, PUT
+D => route delete, get 
+ 
+php artisan route:list => kiểm soát các luồng ra vào và các thông tin chỉnh sửa đổi
+
+php artisan make:request CategoryCreateRequest 
+
+Lỗi 403  public function authorize(): bool
+    {
+        return false;
+    }
+    đổi thành 
+     public function authorize(): bool
+    {
+        return true;
+    }
+
+summernote cdn-> tạo bảng đánh giá nhận xét
+
+
+
+
+
+
